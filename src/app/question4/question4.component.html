@@ -1,0 +1,16 @@
+<p><strong>4.       Write a function to reverse every word of a string<br></strong></p>
+
+<div>
+    <label class="form-check-inline">
+        <input class="form-check-input" type="radio" name="mode" [value]="true" [(ngModel)]="mode">Using split and reverse
+    </label><br>
+    <div *ngIf="mode" >
+        Please Enter the string:<input type="text" name="r1" id="rid1" [(ngModel)]="textdata" (change)='textChange(textdata)'><br>
+    </div>
+    <label class="form-check-inline">
+            <input class="form-check-input" type="radio" name="mode" [value]="false" [(ngModel)]="mode">With using split and reverse
+    </label><br>
+    <div *ngIf="!mode">
+        Without using split and reverse: <input  type="text" name="txt" id="txtId" [(ngModel)]="textdata1" (change)='textChange1(textdata1)'>
+    </div>
+</div>
